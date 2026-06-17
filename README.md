@@ -77,8 +77,8 @@ Thread criada -> entra em filosofo(0) -> define grafos (garfo[0] e garfo[1]) -> 
 (imagens/execucao3.png)
 
 # Parte 3
-## Execução com Deadlock(comDeadlock.py)
-(imagens/comDeadlock.JPG)
+ Execução com Deadlock(comDeadlock.py) 
+ - (imagens/comDeadlock.JPG)
 
-## Execução corregida(semDeadlock.py)
-(imagens/semDeadlock.JPG)
+ Execução corregida(semDeadlock.py)
+- (imagens/semDeadlock.JPG)
