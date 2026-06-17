@@ -38,5 +38,3 @@ t2 = threading.Thread(target=thread_2)
 
 t1.start()
 t2.start()
-
-print("\n--- Sistema executado (não travamentos)---")
