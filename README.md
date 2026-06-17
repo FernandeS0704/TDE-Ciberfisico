@@ -50,7 +50,19 @@ Thread criada -> entra em filosofo(0) -> define grafos (garfo[0] e garfo[1]) -> 
 Garfos sendo usados:
 Thread criada -> entra em filosofo(0) -> define grafos (garfo[0] e garfo[1]) -> pesando -> com fome -> tenta pegar garfos -> espera garfos serem liberados -> pega garfos -> comendo -> devolve garfos
 
+# Parte 2
+
+# Parte 3
+- O Deadlock foi produzido porque a thread1 inicia pegando por primeiro o lock A, apos uma breve pausa, a thread2 segura o lock B. A segunda parte de cada thread requerem o lock que a contraria possui, cada uma deberia liberar a atual, mas isso não é possivel pois ambos locks estao sendo usados ao mesmo tempo.
+
+- As condições de Coffman que acontecem nesta parte sao as 4: exclusao mutua(ambos os locks sao somente possiveis de ser detidos uma thread por vez), manter-e-esperar(ambas as threads mantem o lock que possuem priemiro e aguardam o segundo ser liberado porem nao será), não preempção(a liberação precisa ser voluntaria de cada thread) e espera circular(forma se um ciclo circular de dependencia entre ambas as threads).
+
+- A solução utilizada foi a prevenção através de impor uma hierarquia de recursos. Foi tirado a ordem cruzada de execução ao pegar os locks, e se definiu que o lock A sempre deve ser adquirido antes do B, assim quebrando o problema da espera circular.
+
+
 # Prints de Execução
+
+# Parte 1
 
 ## Execução Inicial
 
@@ -63,3 +75,10 @@ Thread criada -> entra em filosofo(0) -> define grafos (garfo[0] e garfo[1]) -> 
 ## Execução com Deadlock
 
 (imagens/execucao3.png)
+
+# Parte 3
+## Execução com Deadlock(comDeadlock.py)
+(imagens/comDeadlock.JPG)
+
+## Execução corregida(semDeadlock.py)
+(imagens/semDeadlock.JPG)
