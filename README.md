@@ -1,7 +1,5 @@
 # TDE-Ciberfisico
 
-# TDE-Ciberfisico
-
 # Nome do Grupo: CyberCode
 
 # Integrantes: 
@@ -11,6 +9,7 @@
 
 # Linguagem escolhida:
 - Python
+#URL video Youtube
 
 # Instruções de compilação e execução
 - Requisitos: Python 3.10+
