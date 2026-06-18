@@ -11,6 +11,7 @@
 - Python
   
 # URL video Youtube
+https://youtu.be/dqNSBKVTXLI
 
 # Instruções de compilação e execução
 - Requisitos: Python 3.10+
